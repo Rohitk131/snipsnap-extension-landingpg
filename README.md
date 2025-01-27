@@ -1,0 +1,1 @@
+# snipsnap-extension-landingpg
