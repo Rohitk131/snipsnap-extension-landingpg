@@ -76,6 +76,28 @@ export default function LandingPage() {
         </motion.section>
 
         <section className="py-12 sm:py-20">
+          <h2 className="mb-8 sm:mb-12 text-center text-3xl sm:text-4xl font-bold text-white">Supported AI Platforms</h2>
+          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12">
+            <AIPlatform
+              name="ChatGPT"
+              logo="https://static.vecteezy.com/system/resources/thumbnails/022/841/114/small_2x/chatgpt-logo-transparent-background-free-png.png"
+            />
+            <AIPlatform
+              name="DeepSeek"
+              logo="https://registry.npmmirror.com/@lobehub/icons-static-png/1.15.0/files/dark/deepseek-color.png"
+            />
+            <AIPlatform
+              name="Claude"
+              logo="https://res.cloudinary.com/apideck/image/upload/v1689100675/icons/anthropic-claude.png"
+            />
+            <AIPlatform
+              name="Perplexity"
+              logo="https://knowprose.com/wp-content/uploads/2024/04/turquoise402xperplexity.ai_.png.webp"
+            />
+          </div>
+        </section>
+
+        <section className="py-12 sm:py-20">
           <h2 className="mb-8 sm:mb-12 text-center text-3xl sm:text-4xl font-bold text-white">Key Features</h2>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             <FeatureCard
@@ -117,27 +139,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="py-12 sm:py-20">
-          <h2 className="mb-8 sm:mb-12 text-center text-3xl sm:text-4xl font-bold text-white">Supported AI Platforms</h2>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12">
-            <AIPlatform
-              name="ChatGPT"
-              logo="https://static.vecteezy.com/system/resources/thumbnails/022/841/114/small_2x/chatgpt-logo-transparent-background-free-png.png"
-            />
-            <AIPlatform
-              name="DeepSeek"
-              logo="https://registry.npmmirror.com/@lobehub/icons-static-png/1.15.0/files/dark/deepseek-color.png"
-            />
-            <AIPlatform
-              name="Claude"
-              logo="https://res.cloudinary.com/apideck/image/upload/v1689100675/icons/anthropic-claude.png"
-            />
-            <AIPlatform
-              name="Perplexity"
-              logo="https://knowprose.com/wp-content/uploads/2024/04/turquoise402xperplexity.ai_.png.webp"
-            />
-          </div>
-        </section>
 
         <section id="install" className="py-12 sm:py-20 text-center">
           <h2 className="mb-4 sm:mb-6 text-3xl sm:text-4xl font-bold text-white">Ready to Streamline Your Browsing?</h2>
@@ -160,7 +161,85 @@ export default function LandingPage() {
 
       <footer className="py-6 sm:py-8 backdrop-blur-sm bg-black/30">
         <div className="container mx-auto px-4 text-center text-gray-400">
-          <p>&copy; 2024 SnipSnap. All rights reserved.</p>
+          <p className="mb-4">
+            Made with ❤️ by{" "}
+            <a
+              href="https://rohitk.me" // Replace with your actual portfolio link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-green-400 transition-colors"
+            >
+              Rohit Kumar
+            </a>
+          </p>
+          <div className="flex justify-center space-x-6">
+            <a
+              href="https://github.com/rohitk131" // Replace with your GitHub profile link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-github"
+              >
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/rohitkdev" // Replace with your Twitter profile link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-twitter"
+              >
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/rohitkumar131" // Replace with your LinkedIn profile link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-linkedin"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
@@ -171,8 +250,10 @@ function FeatureCard({ icon, title, description }) {
   return (
     <motion.div whileHover={{ scale: 1.05 }} className="rounded-xl bg-white/10 p-[1px] overflow-hidden">
       <div className="h-full rounded-xl bg-black/40 backdrop-blur-sm p-4 sm:p-6 hover:bg-black/60 transition-colors">
-        <div className="mb-3 sm:mb-4 flex justify-center">{icon}</div>
-        <h3 className="mb-2 text-lg sm:text-xl font-semibold text-white">{title}</h3>
+        <div className="flex flex-row items-center gap-3">
+          <div className="mb-3 sm:mb-4 flex justify-start">{icon}</div>
+          <h3 className="mb-2 text-lg sm:text-xl font-semibold text-white">{title}</h3>
+        </div>
         <p className="text-sm sm:text-base text-gray-300">{description}</p>
       </div>
     </motion.div>
@@ -183,10 +264,12 @@ function StepCard({ number, title, description }) {
   return (
     <motion.div whileHover={{ scale: 1.05 }} className="rounded-xl bg-white/10 p-[1px] overflow-hidden">
       <div className="h-full rounded-xl bg-black/40 backdrop-blur-sm p-4 sm:p-6 hover:bg-black/60 transition-colors">
-        <div className="mb-3 sm:mb-4 h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-500">
-          <span className="text-xl sm:text-2xl font-bold text-white">{number}</span>
+        <div className="flex flex-row items-center gap-3">
+          <div className="mb-3 sm:mb-4 h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center rounded-full bg-gradient-to-br from-gray-600 to-gray-400">
+            <span className="text-xl sm:text-2xl font-bold text-white">{number}</span>
+          </div>
+          <h3 className="mb-2 text-lg sm:text-xl font-semibold text-white">{title}</h3>
         </div>
-        <h3 className="mb-2 text-lg sm:text-xl font-semibold text-white">{title}</h3>
         <p className="text-sm sm:text-base text-gray-300">{description}</p>
       </div>
     </motion.div>
