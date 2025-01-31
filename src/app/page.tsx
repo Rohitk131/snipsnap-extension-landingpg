@@ -1,9 +1,24 @@
 "use client"
 import Image from "next/image"
-import { ArrowRight, BookmarkPlus, Link, MessageSquare } from "lucide-react"
+import {  BookmarkPlus, Link, MessageSquare } from "lucide-react"
 import { motion } from "framer-motion"
 import Background from "@/components/background"
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
 
+interface StepCardProps {
+  number: number;
+  title: string;
+  description: string;
+}
+
+interface AIPlatformProps {
+  name: string;
+  logo: string;
+}
 export default function LandingPage() {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -250,7 +265,7 @@ export default function LandingPage() {
   )
 }
 
-function FeatureCard({ icon, title, description }) {
+function FeatureCard({ icon, title, description }: FeatureCardProps){
   return (
     <motion.div whileHover={{ scale: 1.05 }} className="rounded-xl bg-white/10 p-[1px] overflow-hidden">
       <div className="h-full rounded-xl bg-black/40 backdrop-blur-sm p-4 sm:p-6 hover:bg-black/60 transition-colors">
@@ -264,7 +279,7 @@ function FeatureCard({ icon, title, description }) {
   )
 }
 
-function StepCard({ number, title, description }) {
+function StepCard({ number, title, description }: StepCardProps) {
   return (
     <motion.div whileHover={{ scale: 1.05 }} className="rounded-xl bg-white/10 p-[1px] overflow-hidden">
       <div className="h-full rounded-xl bg-black/40 backdrop-blur-sm p-4 sm:p-6 hover:bg-black/60 transition-colors">
@@ -280,7 +295,7 @@ function StepCard({ number, title, description }) {
   )
 }
 
-function AIPlatform({ name, logo }) {
+function AIPlatform({ name, logo }: AIPlatformProps) {
   return (
     <motion.div whileHover={{ scale: 1.1 }} className="flex flex-col items-center">
       <div className="relative mb-2 w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden bg-white/10 p-[1px]">
