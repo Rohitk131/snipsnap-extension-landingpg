@@ -159,12 +159,12 @@ export default function LandingPage() {
         </section>
       </main>
 
-      <footer className="py-6 sm:py-8 backdrop-blur-sm bg-black/30">
-        <div className="container mx-auto px-4 text-center text-gray-400">
-          <p className="mb-4">
+      <footer className="py-2 sm:py-4 backdrop-blur-sm bg-black/30 flex justify-center">
+        <div className="container mx-auto px-4 text-center text-gray-400 flex flex-col sm:flex-row items-center gap-2 justify-center text-base">
+          <p className="text-sm sm:text-base">
             Made with ❤️ by{" "}
             <a
-              href="https://rohitk.me" // Replace with your actual portfolio link
+              href="https://rohitk.me"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-green-400 transition-colors"
@@ -172,17 +172,18 @@ export default function LandingPage() {
               Rohit Kumar
             </a>
           </p>
-          <div className="flex justify-center space-x-6">
+          <div className="flex space-x-3">
             <a
-              href="https://github.com/rohitk131" // Replace with your GitHub profile link
+              href="https://github.com/rohitk131"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -196,15 +197,16 @@ export default function LandingPage() {
               </svg>
             </a>
             <a
-              href="https://twitter.com/rohitkdev" // Replace with your Twitter profile link
+              href="https://twitter.com/rohitkdev"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Twitter"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -217,15 +219,16 @@ export default function LandingPage() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/rohitkumar131" // Replace with your LinkedIn profile link
+              href="https://linkedin.com/in/rohitkumar131"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -242,6 +245,7 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+
     </div>
   )
 }
