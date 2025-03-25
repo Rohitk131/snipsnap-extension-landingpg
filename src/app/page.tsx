@@ -20,6 +20,20 @@ interface AIPlatformProps {
   logo: string;
 }
 export default function LandingPage() {
+  const handleDownload = () => {
+    // Create link to the file in public folder
+
+    const fileUrl = '/chrome-mv3-prod.zip';
+    
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.setAttribute('download', 'SnipSnap');
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -42,9 +56,9 @@ export default function LandingPage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-full border-b-2 border-l-2 border-r-2 border-green-700 bg-gradient-to-tr from-green-600 to-green-500 px-3 sm:px-4 py-1 text-sm sm:text-base text-white shadow-lg transition duration-100 ease-in-out active:translate-y-0.5 active:border-green-600 active:shadow-none">
+            <button onClick={handleDownload} className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-full border-b-2 border-l-2 border-r-2 border-green-700 bg-gradient-to-tr from-green-600 to-green-500 px-3 sm:px-4 py-1 text-sm sm:text-base text-white shadow-lg transition duration-100 ease-in-out active:translate-y-0.5 active:border-green-600 active:shadow-none">
               <span className="absolute h-0 w-0 rounded-full bg-white opacity-10 transition-all duration-300 ease-out group-hover:h-32 group-hover:w-32"></span>
-              <span className="relative font-medium">Add to Chrome</span>
+              <span className="relative font-medium">Download SnipSnap</span>
             </button>
           </motion.a>
         </nav>
@@ -71,9 +85,9 @@ export default function LandingPage() {
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center"
             >
-              <button className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-b-2 border-l-2 border-r-2 border-green-700 bg-gradient-to-tr from-green-600 to-green-500 px-4 py-1 text-white shadow-lg transition duration-100 ease-in-out active:translate-y-0.5 active:border-green-600 active:shadow-none">
+              <button  onClick={handleDownload}  className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-b-2 border-l-2 border-r-2 border-green-700 bg-gradient-to-tr from-green-600 to-green-500 px-4 py-1 text-white shadow-lg transition duration-100 ease-in-out active:translate-y-0.5 active:border-green-600 active:shadow-none">
                 <span className="absolute h-0 w-0 rounded-full bg-white opacity-10 transition-all duration-300 ease-out group-hover:h-32 group-hover:w-32"></span>
-                <span className="relative font-medium">Add to Chrome</span>
+                <span className="relative font-medium">Download SnipSnap</span>
               </button>
             </motion.a>
           </div>
@@ -166,9 +180,9 @@ export default function LandingPage() {
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center"
           >
-            <button className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-b-2 border-l-2 border-r-2 border-green-700 bg-gradient-to-tr from-green-600 to-green-500 px-4 py-1 text-white shadow-lg transition duration-100 ease-in-out active:translate-y-0.5 active:border-green-600 active:shadow-none">
+            <button  onClick={handleDownload}  className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-b-2 border-l-2 border-r-2 border-green-700 bg-gradient-to-tr from-green-600 to-green-500 px-4 py-1 text-white shadow-lg transition duration-100 ease-in-out active:translate-y-0.5 active:border-green-600 active:shadow-none">
               <span className="absolute h-0 w-0 rounded-full bg-white opacity-10 transition-all duration-300 ease-out group-hover:h-32 group-hover:w-32"></span>
-              <span className="relative font-medium">Add to Chrome</span>
+              <span className="relative font-medium">Download SnipSnap</span>
             </button>
           </motion.a>
         </section>
